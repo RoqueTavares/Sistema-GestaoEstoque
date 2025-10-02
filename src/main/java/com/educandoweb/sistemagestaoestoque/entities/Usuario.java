@@ -11,15 +11,14 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name ="tb_Fornecedores" )
-public class Fornecedor implements Serializable {
+@Table(name = "tb_usuario")
+public class Usuario implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
-    private String cnpj;
-    private String telefone;
     private String email;
+    private String senha;
 }
